@@ -7,7 +7,7 @@
     <style>
 @font-face {
   font-family: "anarchaos"; /* a little on the nose there */
-  src:local(anarchaos-font/Anarchaos-7BX9w.otf)
+  src: url("anarchaos-font/Anarchaos-7BX9w.otf");
 }
 .protest-guerrilla-regular {
     font-family: "Protest Guerrilla", sans-serif;
@@ -15,7 +15,7 @@
     font-style: normal;
 }
 * {
-    font-family: "anarchismo", sans-serif;
+    font-family: monospace;
 }
 body {
     background-color: #121212;
@@ -26,8 +26,11 @@ main {
     font-size: 80%;
 }
 #title {
-    font-size: 50px;
+    font-family: anarchaos, sans-serif;
+    font-size: 100px;
     text-align: center;
+    margin-top:-10px;
+    margin-bottom:50px;
 }
 .logo {
     position: fixed;
@@ -47,6 +50,7 @@ main {
 @media (min-width: 30em) {
     .col-left {
         width: 40%;
+        border-right: 5px solid black;
     }
 }
 .col-left, main, .col-right {
@@ -56,14 +60,16 @@ main {
     .col {
         display: table-cell;
         vertical-align: top;
-        border: 2px #b5b5b5 solid;
     }
 }
 
-.main-ish {
+div.main-ish {
     width: 100%;
     display: table;
     table-layout: fixed;
+    border: 1px solid #00000000;
+    padding:10px;
+    box-shadow: 5px 10px #000000;
 }
 
 .container {
@@ -94,6 +100,9 @@ main {
   text-align:center;
   color:#b5b5b5;
 }
+#quote{
+  text-align:center;
+}
 
     </style>
   </head>
@@ -107,9 +116,10 @@ main {
           </a>
         </div>
         <h1 id="title">Anarchism</h1>
+        <h1 id = "quote">"I'd rather have roses on my table than diamonds on my neck." <br> - Emma Goldman</h1>
         <div class="main-ish">
           <div class="col col-left">
-            <h1>hi</h1>
+            <h1>What is Anarchism?</h1>
           </div>
           <div class="col col-right">
             <h1>hi</h1>
