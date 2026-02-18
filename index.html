@@ -5,34 +5,117 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <style>
-      .protest-guerrilla-regular {
-        font-family: "Protest Guerrilla", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
-      * {
-        font-family: "Protest Guerrilla", sans-serif;
-      }
-      body{
-        background-color: black;
-        color:white;
-      }
-      main{
-        text-align:center;
-      }
-      #logo{
-        width:150px;
-        height:150px;
-      }
-      #title{
-        font-size: 50px;
-      }
+@font-face {
+  font-family: "anarchaos"; /* a little on the nose there */
+  src:local(anarchaos-font/Anarchaos-7BX9w.otf)
+}
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-family: "anarchismo", sans-serif;
+}
+body {
+    background-color: #121212;
+    color: #b5b5b5;
+}
+main {
+    display: block;
+    font-size: 80%;
+}
+#title {
+    font-size: 50px;
+    text-align: center;
+}
+.logo {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+    filter:brightness(71%);
+}
+@media (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media (min-width: 30em) {
+    .col-left {
+        width: 40%;
+    }
+}
+.col-left, main, .col-right {
+    padding: 10px;
+}
+@media (min-width: 30em) {
+    .col {
+        display: table-cell;
+        vertical-align: top;
+        border: 2px #b5b5b5 solid;
+    }
+}
+
+.main-ish {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.container {
+    width: 810px;
+    max-width: 100%;
+    margin: 0 auto 10px;
+}
+
+#wiki-text{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+  color:#121212;
+  transition: color 0.5s;
+  display: block;
+  font-size:25px;
+  top:150px;
+  text-align:center;
+}
+  
+.logo:hover + #wiki-text {
+  display: block;
+  font-size:25px;
+  top:150px;
+  text-align:center;
+  color:#b5b5b5;
+}
+
     </style>
   </head>
   <body>
-    <main>
-      <img id = "logo" src="https://images.fineartamerica.com/images/artworkimages/medium/3/anarchist-anarchy-symbol-white-tom-hill-transparent.png">
-      <h1 id="title">Anarchism</h1>
-    </main>
+    <div class="container">
+      <main>
+        <div id="imgAndSuch">
+          <a id="wiki-img" href = "https://en.wikipedia.org/wiki/Portal:Anarchism">
+          <img class = "logo" src="https://images.fineartamerica.com/images/artworkimages/medium/3/anarchist-anarchy-symbol-white-tom-hill-transparent.png">
+          <div id="wiki-text">^^^^^ <br> the wikipedia on anarchism</div>
+          </a>
+        </div>
+        <h1 id="title">Anarchism</h1>
+        <div class="main-ish">
+          <div class="col col-left">
+            <h1>hi</h1>
+          </div>
+          <div class="col col-right">
+            <h1>hi</h1>
+          </div>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
