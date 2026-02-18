@@ -48,13 +48,16 @@ main {
 }
 
 @media (min-width: 30em) {
-    .col-left {
-        width: 40%;
+    .col-left1 {
+        width: 27%;
         border-right: 5px solid black;
     }
 }
-.col-left, main, .col-right {
+.col-left1, main, .col-right1 {
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
 }
 @media (min-width: 30em) {
     .col {
@@ -68,8 +71,8 @@ div.main-ish {
     display: table;
     table-layout: fixed;
     border: 1px solid #00000000;
-    padding:10px;
     box-shadow: 5px 10px #000000;
+    background-color:#1c1c1c;
 }
 
 .container {
@@ -99,6 +102,7 @@ div.main-ish {
   top:150px;
   text-align:center;
   color:#b5b5b5;
+  place-items: center;
 }
 #quote{
   text-align:center;
@@ -118,11 +122,13 @@ div.main-ish {
         <h1 id="title">Anarchism</h1>
         <h1 id = "quote">"I'd rather have roses on my table than diamonds on my neck." <br> - Emma Goldman</h1>
         <div class="main-ish">
-          <div class="col col-left">
+          <div class="col col-left1">
             <h1>What is Anarchism?</h1>
           </div>
-          <div class="col col-right">
-            <h1>hi</h1>
+          <div class="col col-right1">
+          <h1 style="font-weight:400">Anarchism is a political phiolosiphy and movement
+             that advocates for the abolition of all governmental and heirarchial institutions.
+          </h1>
           </div>
         </div>
       </main>
