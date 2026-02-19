@@ -100,12 +100,14 @@ div.main-ish{
   width: 150px;
   height: 150px;
   z-index: 1000;
-  color:#121212;
+  color:#12121200;
   transition: color 0.5s;
-  display: block;
   font-size:25px;
   top:150px;
   text-align:center;
+}
+#wiki-text:visited{
+  color:#b5b5b5;
 }
   
 .logo:hover + #wiki-text {
@@ -121,7 +123,14 @@ div.main-ish{
 .main2{
   border-top:3px solid black;
 }
-
+details.DecRev > summary{
+  
+   list-style-type: '[]';
+}
+details.DecRev[open] > summary{
+  
+   list-style-type: '][';
+}
 details > summary{
    list-style-type: '>';
 }
@@ -152,6 +161,9 @@ details[open] > summary {
   width:150px;
   height:px;
 }
+details{
+  open: "true";
+}
     </style>
   </head>
   <body>
@@ -180,13 +192,14 @@ details[open] > summary {
           </div>
         </div>
         <br>
-        <details open = "true">
+
+        <details open open = "true">
         <summary class = "row-header row1" id="sub-row-header">
             <h1> > Need to know people & definitions</h1>       
         </summary>
           <div class="main-ish main2">
             <div class="col col-left2">
-              <details >
+              <details open >
                 <summary style="font-size: 25px;" > Proudhon</summary>
                 <hr>
                 <img class = "imgs-people" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Portrait_of_Pierre_Joseph_Proudhon_1865.jpg/250px-Portrait_of_Pierre_Joseph_Proudhon_1865.jpg">
@@ -198,7 +211,7 @@ details[open] > summary {
 
               <br>
 
-              <details >
+              <details open>
                 <summary style="font-size: 25px;"> Bakunin</summary>
                 <hr>
                 <img class = "imgs-people" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Mikhail_Bakunin_Nader_%283x4_cropped%29.jpg/250px-Mikhail_Bakunin_Nader_%283x4_cropped%29.jpg">
@@ -210,7 +223,7 @@ details[open] > summary {
 
               <br>
 
-              <details>
+              <details open>
                 <summary style="font-size: 25px;"> Godwin </summary>
                 <span style="font-size:12.5px;">fun fact! he was married to mary wollstonecraft </span>
                 <hr>
@@ -223,7 +236,7 @@ details[open] > summary {
 
               <br>
 
-              <details >
+              <details open>
                 <summary style="font-size: 25px;"> Goldman</summary>
                 <hr>
                 <img class = "imgs-people" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Emma_Goldman_seated.jpg/250px-Emma_Goldman_seated.jpg">
@@ -235,7 +248,7 @@ details[open] > summary {
 
               <br>
 
-              <details >
+              <details open >
                 <summary style="font-size: 25px;"> Kropotkin</summary>
                 <hr>
                 <img class = "imgs-people" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Peter_Kropotkin_circa_1900.jpg/250px-Peter_Kropotkin_circa_1900.jpg">
@@ -250,22 +263,50 @@ details[open] > summary {
             </div>
             <div class="col col-right2">
               
-              <details>
+              <details open>
                 <summary style="font-size: 25px;">Russian anarchism</summary>
                 <hr>
-                <h2 class = "deets">hi</h1>
+                <h2 >Russian anarchism has had a strong presence in the country for almsot two centuries,
+                  being born out of the split in the international workingmen's association and harsh governmental
+                  reforms. They are most known for planning the assasination of Tsar Alexander II
+                </h1>
+                <details open class="DecRev">
+                  <summary style="font-size: 25px;">Decembrist Revolt</summary>
+                  <hr>
+                  <h2> The decembrist revolt was a filed attempt at a coup on the russian empire by their opposition
+                    while it might have failed, it was Russia's first revolution in a long time, and the first modern example of 
+                    a challene against aristocratic rule. 
+                  </h2>
+                </details>
+                  <br>
               </details>
               <br>
 
-              <details>
+              <details open>
                 <summary style="font-size: 25px;">Methods</summary>
                 <hr>
-                <h2 class = "deets">hi</h1>
+                <ul>
+                  <h1>Direct Action</h1>
+                  <li>
+                    <h2>Disruption : anarchists, both past and modern day have a goal to 
+                    disrupt their heirarchy, it can be by protesting or forming intentional communities
+                    with decision making being explicitly anti-authoritarian
+                    </h2>
+                  </li>
+                  <li>
+                    <h2>Asassination: Terror attacks have been a key part of anarchist history, believing that 
+                      these attacks were necessary for a revolution; Alexander II of russia and president willian McKinley
+                      were both asassinated by anarchists.
+                    </h2>
+                  </li>
+                </ul>
+
+                  <br>
               </details>
               <br>
 
-              <details>
-                <summary style="font-size: 25px;">General Terms</summary>
+              <details open>
+                <summary style="font-size: 25px;">General-Terms</summary>
                 <hr>
                 <h2 class = "deets">h</h1>
               </details>
@@ -273,21 +314,20 @@ details[open] > summary {
             </div>
           </div>
         </details>
+
+        <br>
+        <details open open = "true">
+        <summary class = "row-header row1" id="sub-row-header">
+            <h1> > Historical and industrial impact</h1>       
+        </summary>
+          <div class="main-ish main2">
+            <div class="col col-left2">
+              
+            </div>
+          </div>
+        </details>
         
-
-          <div>
-            <div class = "row-header row1">
-              <h1>Historical & industrial prominence</h1>            
-            </div>
-          </div>
-
-
-          <div>
-            <div class = "row-header row1">
-              <h1>Anarchism in popular culture</h1>            
-            </div>
-          </div>
-
+        <br>
         </div>
       </main>
     </div>
