@@ -52,22 +52,33 @@ main {
 @media (min-width: 30em) {
     .col-left1 {
         width: 27%;
+        margin-right: 15px;
         border-right: 5px solid black;
     }
 }
-.col-left1, main, .col-right1 {
+.col-left1, main, .col-right1, .row-header{
     padding: 10px;
     justify-content: center;
     align-items: center;
     margin:auto;
 }
 @media (min-width: 30em) {
-    .col {
+    .col{
         display: table-cell;
         vertical-align: top;
     }
 }
-div.main-ish {
+.row1{
+  margin-top:5px;
+  width:770px;
+  height:50px;
+  border-bottom: 5px solid #000000;
+  box-shadow: 5px  #000000;
+  background-color:#1c1c1c;
+  color:#b5b5b5;
+  text-align:center;
+}
+div.main-ish{
     width: 100%;
     display: table;
     table-layout: fixed;
@@ -107,7 +118,31 @@ div.main-ish {
 #quote{
   text-align:center;
 }
+.main2{
+  border-top:3px solid black;
+}
 
+details > summary{
+   list-style-type: '>';
+}
+details[open] > summary {
+    list-style-type: '<';
+}
+.col-left2, .col-right2{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.col-left2 {
+        width: 385px;
+        margin-right: 15px;
+        border-right: 5px solid black;
+    }
+    .deets{
+      
+  text-indent: 50px;
+    }
     </style>
   </head>
   <body>
@@ -116,10 +151,12 @@ div.main-ish {
         <div id="imgAndSuch">
           <a id="wiki-img" href = "https://en.wikipedia.org/wiki/Portal:Anarchism">
           <img class = "logo" src="https://images.fineartamerica.com/images/artworkimages/medium/3/anarchist-anarchy-symbol-white-tom-hill-transparent.png">
-          <div id="wiki-text">^^^^^ <br> the wikipedia on anarchism</div>
+          <div id="wiki-text">^^^^^<br> the wikipedia on anarchism</div>
           </a>
         </div>
-        <h1 id="title">Anarchism</h1>
+        <h1 id="title">Anarchism
+          <span id ="title" style="font-size:30px;"> -Hayden Falcon</span>
+        </h1>
         <h1 id = "quote">"I'd rather have roses on my table than diamonds on my neck." <br> - Emma Goldman</h1>
         <div class="main-ish">
           <div class="col col-left1">
@@ -132,6 +169,32 @@ div.main-ish {
              socialist ideas.
           </h1>
           </div>
+        </div>
+        <br>
+        <div class = "row-header row1">
+            <h1>Need to know people & definitions</h1>            
+        </div>
+          <div class="main-ish main2">
+            <div class="col col-left2">
+              <details>
+                <summary style="font-size: 25px; font-weight: bold;"> Godwin</summary>
+                <h1 class = "deets">hi</h1>
+              </details>
+              <br>
+              <details>
+                <summary style="font-size: 25px;"> Goldman</summary>
+                <h1 class = "deets">hi</h1>
+              </details>
+              <br>
+              <details>
+                <summary style="font-size: 25px;"> Proudhon</summary>
+                <h1 class = "deets">hi</h1>
+              </details>
+            </div>
+            <div class="col col-right2">
+              <h1 style="font-weight:400">  A
+              </h1>
+            </div>
         </div>
       </main>
     </div>
