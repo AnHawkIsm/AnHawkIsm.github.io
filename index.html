@@ -164,7 +164,26 @@ details[open] > summary {
 details{
   open: "true";
 }
-    </style>
+
+
+
+
+.image-etc {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Apple_Harvest_by_Camille_Pissarro.jpg/960px-Apple_Harvest_by_Camille_Pissarro.jpg') no-repeat;
+    background-size: 100%!important;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 320px;
+    width: 300px;
+    z-index: 1000;
+    opacity: 1;
+    border-radius:5px;
+}
+@media (max-width: 600px) {
+.image-etc{display:none;}
+}
+</style>
   </head>
   <body>
     <div class="container">
@@ -178,6 +197,7 @@ details{
         <h1 id="title">Anarchism
           <span id ="title" style="font-size:30px;"> -Hayden Falcon</span>
         </h1>
+        <div class="image-etc"></div>
         <h1 id = "quote">"I'd rather have roses on my table than diamonds on my neck." <br> - Emma Goldman</h1>
         <div class="main-ish">
           <div class="col col-left1">
