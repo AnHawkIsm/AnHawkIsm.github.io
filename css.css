@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "anarchaos"; /* a little on the nose there */
+  src: url("anarchaos-font/Anarchaos-7BX9w.otf");
+}
+.protest-guerrilla-regular {
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    font-family: monospace;
+}
+body {
+    background-color: #121212;
+    color: #b5b5b5;
+}
+main {
+    display: block;
+    font-size: 80%;
+}
+#title {
+    font-family: anarchaos, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-top:-10px;
+    margin-bottom:50px;
+}
+.logo {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+    filter:brightness(71%);
+}
+@media (max-width: 600px) {
+    #logo {
+        display: none;
+    }
+}
+
+@media (min-width: 30em) {
+    .col-left1 {
+        width: 27%;
+        margin-right: 15px;
+        border-right: 5px solid black;
+    }
+}
+.col-left1, main, .col-right1, .row-header{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+@media (min-width: 30em) {
+    .col{
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+.row1{
+  margin-top:5px;
+  width:770px;
+  height:50px;
+  border-bottom: 5px solid #000000;
+  box-shadow: 5px  #000000;
+  background-color:#1c1c1c;
+  color:#b5b5b5;
+  text-align:center;
+}
+div.main-ish{
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    border: 1px solid #00000000;
+    box-shadow: 5px 10px #000000;
+    background-color:#1c1c1c;
+}
+
+.container {
+    width: 810px;
+    max-width: 100%;
+    margin: 0 auto 10px;
+}
+
+#wiki-text{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+  color:#12121200;
+  transition: color 0.5s;
+  font-size:25px;
+  top:150px;
+  text-align:center;
+}
+#wiki-text:visited{
+  color:#b5b5b5;
+}
+  
+.logo:hover + #wiki-text {
+  display: block;
+  font-size:25px;
+  top:150px;
+  text-align:center;
+  color:#b5b5b5;
+}
+#quote{
+  text-align:center;
+}
+.main2{
+  border-top:3px solid black;
+}
+details.DecRev > summary{
+  
+   list-style-type: '[]';
+}
+details.DecRev[open] > summary{
+  
+   list-style-type: '][';
+}
+details > summary{
+   list-style-type: '>';
+}
+details[open] > summary {
+    list-style-type: '<';
+}
+#sub-row-header{
+  
+    list-style-type: '';
+}
+.col-left2, .col-right2{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+}
+.col-left2 {
+        width: 385px;
+        margin-right: 15px;
+        border-right: 5px solid black;
+    }
+    .deets{
+      width:60%;
+      float:right;
+      text-align:left;
+    }
+.imgs-people{
+  width:150px;
+  height:px;
+}
+details{
+  open: "true";
+}
+
+
+
+.image-etc {
+    */ background: url('url') no-repeat;
+    background-size: 100%!important;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    height: 225px;
+    width: 300px;
+    z-index: 1000;
+    opacity: 1;
+    border-radius:5px;
+}
+@media (max-width: 600px) {
+.image-etc{display:none;}
+}
+#syndicalimg{
+  width:85%;
+}
+#decemberRevoltImage{
+  width:80%;
+}
